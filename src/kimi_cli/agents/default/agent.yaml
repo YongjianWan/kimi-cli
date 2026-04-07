@@ -24,6 +24,10 @@ agent:
     - "kimi_cli.tools.web:FetchURL"
     - "kimi_cli.tools.plan:ExitPlanMode"
     - "kimi_cli.tools.plan.enter:EnterPlanMode"
+    - "kimi_cli.tools.workspace_audit:AuditSummary"
+    - "kimi_cli.tools.workspace_audit:AuditFile"
+    - "kimi_cli.tools.workspace_audit:AuditDiff"
+    - "kimi_cli.tools.workspace_audit:AuditOverview"
   subagents:
     coder:
       path: ./coder.yaml
